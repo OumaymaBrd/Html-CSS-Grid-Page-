@@ -1,0 +1,99 @@
+ /* Style global */
+
+ body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Grid Container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 3 colonnes */
+    grid-template-rows: 100px 1fr 100px; /* 3 lignes */
+    gap: 10px;
+    width: 90%;
+    height: 90vh;
+    border: 2px solid orange;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  
+    /* Positionnement dans la grille */
+    grid-column: 1 / -1; /* Occupe toute la largeur */
+    grid-row: 1 / 2;     /* Sur la première ligne */
+  }
+  
+  /* Flexbox Container dans le Header */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .item {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* Left Sidebar */
+  .sidebar-left {
+    background-color: #1E3A8A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Positionnement dans la grille */
+    grid-column: 1 / 2; /* Première colonne */
+    grid-row: 2 / 3;    /* Deuxième ligne */
+  }
+  
+  /* Main Content */
+  .main-content {
+    background-color: #22D3EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Positionnement dans la grille */
+    grid-column: 2 / 3; /* Deuxième colonne */
+    grid-row: 2 / 3;    /* Deuxième ligne */
+  }
+  
+  /* Right Sidebar */
+  .sidebar-right {
+    background-color: #EF4444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Positionnement dans la grille */
+    grid-column: 3 / 4; /* Troisième colonne */
+    grid-row: 2 / 3;    /* Deuxième ligne */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #BE123C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Positionnement dans la grille */
+    grid-column: 1 / -1; /* Occupe toute la largeur */
+    grid-row: 3 / 4;     /* Sur la dernière ligne */
+  }
+  
